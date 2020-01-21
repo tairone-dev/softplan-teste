@@ -46,11 +46,11 @@ antigo nome "umoNota" existente na propriedade da classe.
 
     Basta enviar uma requisição *GET* para o endpoint:
 
-    `/gerador-observacao`
+    `http://localhost:8080/gerador-observacao`
 
     Passando por parametro o array de inteiros, como exemplo abaixo:
 
-    `/gerador-observacao?valores=1&valores=2&valores=3`
+    `http://localhost:8080/gerador-observacao?valores=1&valores=2&valores=3`
 
 # Novo comportamento
 
@@ -90,3 +90,12 @@ de código "98561" e "87286", pois alguns itens estão sem a propriedade "valorU
     Por esta razão segue link com o JSON atualizado com base no Excel para geração de um relatório correto:
 
 JSON: https://drive.google.com/file/d/1C_6Eb-L3eaNYE6ZxMVL0aQrpMttq0LRl/view?usp=sharing
+
+
+## Acessos da api
+
+    Enviar uma requisição *POST* para o endpoint:
+
+    `http://localhost:8080/orcamento`
+
+    Passando por parâmetro o objeto json proporcionado para resolução do exercício.
