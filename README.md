@@ -40,6 +40,40 @@ Ponto 7 - Movidos os textos fixo da classe para propriedade da mesma:
     Essa alteração é devida a facilidade que pode ocorrer "typos" no código, como provavelmente aconteceu no
 antigo nome "umoNota" existente na propriedade da classe.
 
+## Acessos da api
+
+# Antigo comportamento
+
+    Basta enviar uma requisição *GET* para o endpoint:
+
+    `/gerador-observacao`
+
+    Passando por parametro o array de inteiros, como exemplo abaixo:
+
+    `/gerador-observacao?valores=1&valores=2&valores=3`
+
+# Novo comportamento
+
+    Enviar uma requisição *POST* para o endpoint:
+
+    `/gerador-observacao/com-valor`
+
+    Passando por parâmetro um objeto JSON, segue exemplo abaixo:
+
+    `[
+	    {
+		    "numero": 1,
+    		"valor": 34565.45
+	    },
+	    {
+		    "numero": 2,
+    		"valor": 35842.2
+	    },
+	    {
+		    "numero": 3,
+    		"valor": 1.5
+	    }
+    ]`
 
 ## Exercício 2
 
